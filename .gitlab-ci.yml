@@ -1,0 +1,9 @@
+image: gradle:jdk8
+
+stages:
+  - test
+
+gradle-build:
+  stage: test
+  script:
+    - gradle clean test
